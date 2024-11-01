@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descubra Jundiaí</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho e Navegação -->
+    <header id="header">
+      <nav class="navbar">
+        <ul>
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#atracoes">Atrações</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#parques">Parques</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Seção Hero (Boas-vindas) -->
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Bem-vindo a Jundiaí</h1>
+        <p>Explore os melhores eventos, parques e atrações de Jundiaí.</p>
+        <a href="#atracoes" class="btn">Explorar</a>
+      </div>
+    </section>
+
+    <div class="text">
+      <h1>Pontos Turisticos</h1>
+      <p></p>
+    </div>
+    <div class="marquee-wrapper">
+      <div class="marquee">
+        <div class="marquee-item">
+          <article class="member">
+            <a class="member-link" href="#0">
+              <figure class="member-img-wrapper">
+                <img
+                  class="member-img"
+                  width="700"
+                  height="700"
+                  src="./IMG/parque-da-cidade-1280x853-1.jpg"
+                  alt="Team Member #1"
+                />
+              </figure>
+              <figcaption class="member-details">
+                <h3 class="member-title">Parque da Cidade</h3>
+                <p class="member-subtitle">Parque</p>
+              </figcaption>
+            </a>
+          </article>
+        </div>
+        <div class="marquee-item">
+          <article class="member">
+            <a class="member-link" href="#0">
+              <figure class="member-img-wrapper">
+                <img
+                  class="member-img"
+                  width="1000"
+                  height="667"
+                  src="./IMG/teatro_polytheama(2).jpg"
+                  alt="Team Member #2"
+                />
+              </figure>
+              <figcaption class="member-details">
+                <h3 class="member-title">Teatro Polytheama</h3>
+                <p class="member-subtitle">Teatro</p>
+              </figcaption>
+            </a>
+          </article>
+        </div>
+        <div class="marquee-item">
+          <article class="member">
+            <a class="member-link" href="#0">
+              <figure class="member-img-wrapper">
+                <img
+                  class="member-img"
+                  width="560"
+                  height="700"
+                  src="./IMG/serra-do-japi.jpg"
+                  alt="Team Member #3"
+                />
+              </figure>
+              <figcaption class="member-details">
+                <h3 class="member-title">Serra do Japi</h3>
+                <p class="member-subtitle">Cachoeira</p>
+              </figcaption>
+            </a>
+          </article>
+        </div>
+        <div class="marquee-item">
+          <article class="member">
+            <a class="member-link" href="#0">
+              <figure class="member-img-wrapper">
+                <img
+                  class="member-img"
+                  width="1000"
+                  height="667"
+                  src="./IMG/Museu.jpg"
+                  alt="Team Member #4"
+                />
+              </figure>
+              <figcaption class="member-details">
+                <h3 class="member-title">Museu Barão</h3>
+                <p class="member-subtitle">Museur</p>
+              </figcaption>
+            </a>
+          </article>
+        </div>
+        <div class="marquee-item">
+          <article class="member">
+            <a class="member-link" href="#0">
+              <figure class="member-img-wrapper">
+                <img
+                  class="member-img"
+                  width="560"
+                  height="700"
+                  src="https://assets.codepen.io/162656/team5.jpg"
+                  alt="Team Member #5"
+                />
+              </figure>
+              <figcaption class="member-details">
+                <h3 class="member-title">Team Member #5</h3>
+                <p class="member-subtitle">Marketing Lead</p>
+              </figcaption>
+            </a>
+          </article>
+        </div>
+        <div class="marquee-item">
+          <article class="member">
+            <a class="member-link" href="#0">
+              <figure class="member-img-wrapper">
+                <img
+                  class="member-img"
+                  width="1000"
+                  height="667"
+                  src="https://assets.codepen.io/162656/team6.jpg"
+                  alt="Team Member #6"
+                />
+              </figure>
+              <figcaption class="member-details">
+                <h3 class="member-title">Team Member #6</h3>
+                <p class="member-subtitle">Art Director</p>
+              </figcaption>
+            </a>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="comes">
+      <h1>Restaurantes</h1>
+    </div>
+    <div class="filters">
+      <div class="filter">
+        <label for="rating">Classificação:</label>
+        <select id="rating" onchange="filterRestaurants()">
+          <option value="">Todos</option>
+          <option value="5">5 Estrelas</option>
+          <option value="4">4 Estrelas</option>
+          <option value="3">3 Estrelas</option>
+          <option value="2">2 Estrelas</option>
+          <option value="1">1 Estrela</option>
+        </select>
+      </div>
+
+      <div class="filter">
+        <label for="type">Tipo:</label>
+        <select id="type" onchange="filterRestaurants()">
+          <option value="">Todos</option>
+          <option value="restaurante">Restaurante</option>
+          <option value="doceria">Doceria</option>
+          <option value="bar">Bar</option>
+        </select>
+      </div>
+
+      <div class="filter">
+        <label for="meal">Refeição:</label>
+        <select id="meal" onchange="filterRestaurants()">
+          <option value="">Todas</option>
+          <option value="cafe-da-manha">Café da Manhã</option>
+          <option value="brunch">Brunch</option>
+          <option value="almoco">Almoço</option>
+          <option value="janta">Janta</option>
+        </select>
+      </div>
+
+      <div class="filter">
+        <label for="price">Preço:</label>
+        <select id="price" onchange="filterRestaurants()">
+          <option value="">Todos</option>
+          <option value="barato">Barato</option>
+          <option value="intermediario">Intermediário</option>
+          <option value="caro">Caro</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="center-button">
+      <button onclick="filterRestaurants()">Procurar</button>
+    </div>
+
+    <div class="restaurant-list" id="restaurant-list"></div>
+    <section id="sobre">
+      <h2>Sobre Jundiaí</h2>
+      <p>
+        Jundiaí é uma cidade repleta de cultura e história. Conheça os
+        principais marcos e curiosidades que fazem desta cidade um lugar único.
+      </p>
+      <div class="sobre-cidade">
+        <p>
+          Fundada no século XIX, Jundiaí possui um patrimônio cultural valioso,
+          com eventos tradicionais e uma rica história industrial e agrícola.
+        </p>
+      </div>
+    </section>
+    <!-- Seção de Contato -->
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>
+        Entre em contato conosco para mais informações ou sugestões. Adoramos
+        ouvir sua opinião!
+      </p>
+      <form id="formContato">
+        <input type="text" id="nome" placeholder="Nome" required />
+        <input type="email" id="email" placeholder="E-mail" required />
+        <textarea id="mensagem" placeholder="Mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="restaurante.js"></script>
+  </body>
+</html>
