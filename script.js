@@ -63,3 +63,23 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 
 
+
+let slideIndex = 0; // Índice do slide atual
+
+// Função para mostrar a próxima imagem
+function showSlides() {
+    const slides = document.querySelector('.gallery-slides');
+    const totalSlides = slides.children.length; // Total de imagens
+
+    // Mover para a próxima imagem
+    slideIndex++;
+    if (slideIndex >= totalSlides) {
+        slideIndex = 0; // Reseta para o primeiro slide
+    }
+
+    // Ajustar a posição da galeria com base no índice atual
+    slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+}
+
+// Muda a imagem a cada 4 segundos
+setInterval(showSlides, 4000); // 4000 ms = 4 segundos

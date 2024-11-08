@@ -334,7 +334,7 @@ body {
   margin: 0 auto 50px;
   font-size: 1.5rem;
   text-align: center;
-  color: #;
+  color: #ff8c42;
 }
 
 
@@ -395,6 +395,7 @@ body {
   margin: 0 0 5px;
   color: #fff;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .member-subtitle {
@@ -600,4 +601,305 @@ select:focus {
 .center-button {
   display: flex;
   justify-content: center;
+}
+
+
+
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 40px;
+  border: 1px solid #501919;
+  width: 30%;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Estilo para o botão de informação */
+.info-button {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: var(--secundaria);
+  color: var(--branco);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+/* Exibir o botão quando o usuário passa o mouse sobre o item */
+.member:hover .info-button {
+  display: block;
+  opacity: 1;
+}
+
+
+
+
+
+
+#agenda-cultural {
+  background-color: #eef5f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#agenda-cultural h1 {
+  font-size: 2.5em;
+  color: var(--primaria);
+  margin-bottom: 20px;
+}
+
+.filtro-eventos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.lista-eventos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.evento-item {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.evento-item h2 {
+  font-size: 1.8em;
+  color: var(--secundaria);
+}
+
+.evento-item p {
+  font-size: 1em;
+  color: #333;
+  margin: 5px 0;
+}
+
+
+
+
+#hospedagem {
+  background-color: #eef5f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#hospedagem h1 {
+  font-size: 2.5em;
+  color: var(--primaria);
+
+}
+
+.galeria-hospedagem {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.hospedagem-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: left;
+}
+
+.hospedagem-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.hospedagem-info {
+  padding: 15px;
+  color: #333;
+}
+
+.hospedagem-info h2 {
+  font-size: 1.5em;
+  color: var(--secundaria);
+}
+
+.hospedagem-info p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.feedback {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.feedback h3 {
+  font-size: 1.2em;
+  color: var(--primaria);
+  margin-bottom: 10px;
+}
+
+.comentarios p {
+  font-size: 0.9em;
+  margin-bottom: 8px;
+}
+
+.comentario-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.comentario-form button {
+  margin-top: 10px;
+  background-color: var(--secundaria);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comentario-form button:hover {
+  background-color: #ff8c42;
+}
+
+#gastronomia {
+  background-color: #eef5f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#gastronomia h1 {
+  font-size: 2.5em;
+  color: var(--primaria);
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f8f9fa;
+  /* Cor de fundo suave */
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  /* Borda direita */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  /* Sombra para destacar */
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.filter {
+  margin-bottom: 15px;
+}
+
+.filter label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.filter select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+
+  appearance: none;
+  transition: border-color 0.3s;
+}
+
+.filter select:focus {
+  border-color: #04203f;
+  outline: none;
+}
+
+
+
+#restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+#gastronomia {
+
+
+  display: flex;
+  flex-direction: column;
+  /* Alinha os itens em coluna */
+  align-items: center;
+  /* Centraliza horizontalmente */
+}
+
+#gastronomia h1 {
+  margin: 0;
+  /* Remove margens do título */
+  padding-bottom: 20px;
+  /* Espaço abaixo do título */
+  text-align: center;
+  /* Centraliza o texto */
+}
+
+#restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  /* Centraliza os cards na seção */
+  width: 100%;
+  /* Faz com que a lista ocupe toda a largura disponível */
 }

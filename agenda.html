@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda Cultural - Jundiaí</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header id="header">
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="agenda.html">Agenda Cultural</a></li>
+          <li><a href="hospedagem.html">Hospedagem</a></li>
+          <li><a href="restaurante.html">Gastronomia</a></li>
+          <li><a href="index.html#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Seção da Agenda Cultural -->
+    <section id="agenda-cultural">
+      <h1>Agenda Cultural de Jundiaí</h1>
+      <p>
+        Confira os principais eventos culturais e locais em Jundiaí. Fique por
+        dentro das próximas atrações!
+      </p>
+
+      <!-- Filtro de Eventos -->
+      <div class="filtro-eventos">
+        <label for="data-filtro">Data:</label>
+        <input type="date" id="data-filtro" />
+        <label for="tipo-filtro">Tipo:</label>
+        <select id="tipo-filtro">
+          <option value="">Todos</option>
+          <option value="musica">Música</option>
+          <option value="teatro">Teatro</option>
+          <option value="festival">Festival</option>
+          <option value="exposicao">Exposição</option>
+        </select>
+        <button id="filtrar-btn">Filtrar</button>
+      </div>
+
+      <!-- Lista de Eventos -->
+      <div class="lista-eventos">
+        <article class="evento-item" data-date="2024-11-05" data-type="musica">
+          <h2>Festival de Música de Jundiaí</h2>
+          <p><strong>Data:</strong> 05 de Novembro de 2024</p>
+          <p><strong>Local:</strong> Parque da Cidade</p>
+          <p>
+            <strong>Descrição:</strong> Um festival de música ao ar livre com
+            bandas locais e nacionais.
+          </p>
+        </article>
+
+        <article class="evento-item" data-date="2024-11-10" data-type="teatro">
+          <h2>Peça Teatral: A Comédia dos Erros</h2>
+          <p><strong>Data:</strong> 10 de Novembro de 2024</p>
+          <p><strong>Local:</strong> Teatro Polytheama</p>
+          <p>
+            <strong>Descrição:</strong> Uma divertida peça de teatro para todas
+            as idades.
+          </p>
+        </article>
+
+        <article
+          class="evento-item"
+          data-date="2024-11-15"
+          data-type="festival"
+        >
+          <h2>Festival Gastronômico de Jundiaí</h2>
+          <p><strong>Data:</strong> 15 de Novembro de 2024</p>
+          <p><strong>Local:</strong> Centro Histórico</p>
+          <p>
+            <strong>Descrição:</strong> Explore sabores locais e internacionais
+            neste evento gastronômico.
+          </p>
+        </article>
+
+        <article
+          class="evento-item"
+          data-date="2024-11-20"
+          data-type="exposicao"
+        >
+          <h2>Exposição de Arte Moderna</h2>
+          <p><strong>Data:</strong> 20 de Novembro de 2024</p>
+          <p><strong>Local:</strong> Museu de Jundiaí</p>
+          <p>
+            <strong>Descrição:</strong> Exposição com artistas locais e
+            internacionais de arte moderna.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <script src="agenda.js"></script>
+  </body>
+</html>
